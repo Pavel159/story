@@ -1,0 +1,120 @@
+.controlButtons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  width: 128px;
+}
+
+.buttonLeft,
+.startButton {
+  width: 48px;
+  height: 48px;
+  background: url('src/assets/arrow-left.png');
+  cursor: pointer;
+  z-index: 999999;
+}
+
+.buttonRight {
+  width: 48px;
+  height: 48px;
+  background: url('src/assets/arrow-right.png');
+  cursor: pointer;
+  z-index: 999999;
+}
+
+.topButtons {
+  position: relative;
+  top: 320px;
+  left: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 580px;
+}
+
+.circleButton {
+  width: 48px;
+  height: 48px;
+  background: url('src/assets/circle.svg');
+  cursor: pointer;
+  z-index: 999999;
+}
+
+.volume {
+  position: absolute;
+  right: 42px;
+  bottom: 32px;
+  background: url('src/assets/volume-icon.svg');
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.volumeMobile {
+  position: absolute;
+  top: 15px;
+  right: -130px;
+  background: url('src/assets/volume-icon.svg');
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .book {
+    min-width: 100% !important;
+    min-height: 100% !important;
+  }
+}
+
+@media (max-width: 929px) {
+  .topButtons {
+    left: 0px;
+  }
+
+  .volume {
+    display: none;
+  }
+
+  .volumeMobile {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .topButtons {
+    width: 470px;
+    top: 290px;
+  }
+
+  .volumeMobile {
+    right: -90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topButtons {
+    width: 400px;
+  }
+
+  .volumeMobile {
+    right: -70px;
+  }
+}
+
+@media (max-width: 412px) {
+  .topButtons {
+    width: 350px;
+    top: 260px;
+  }
+}
+
+@media (max-width: 360px) {
+  .topButtons {
+    width: 320px;
+    top: 240px;
+  }
+}
