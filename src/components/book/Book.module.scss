@@ -11,7 +11,7 @@
 .startButton {
   width: 48px;
   height: 48px;
-  background: url('src/assets/arrow-left.png');
+  background: url('../../assets/arrow-left.png');
   cursor: pointer;
   z-index: 999999;
 }
@@ -19,7 +19,7 @@
 .buttonRight {
   width: 48px;
   height: 48px;
-  background: url('src/assets/arrow-right.png');
+  background: url('../../assets/arrow-right.png');
   cursor: pointer;
   z-index: 999999;
 }
@@ -37,7 +37,7 @@
 .circleButton {
   width: 48px;
   height: 48px;
-  background: url('src/assets/circle.svg');
+  background: url('../../assets/circle.svg');
   cursor: pointer;
   z-index: 999999;
 }
@@ -46,7 +46,8 @@
   position: absolute;
   right: 42px;
   bottom: 32px;
-  background: url('src/assets/volume-icon.svg');
+  //   background: url('src/assets/volume-icon.svg');
+  background: url('../../assets/volume-icon.svg');
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -56,7 +57,7 @@
   position: absolute;
   top: 15px;
   right: -130px;
-  background: url('src/assets/volume-icon.svg');
+  background: url('../../assets/volume-icon.svg');
   width: 24px;
   height: 24px;
   cursor: pointer;
