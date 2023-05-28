@@ -7,16 +7,19 @@ import { FC, useRef, useState } from 'react';
 
 const Book: FC = () => {
   const bookRef = useRef<any>(null);
+
+  let currentPage = bookRef?.current?.pageFlip()?.getCurrentPageIndex();
+
   const [pageIndex, setPageIndex] = useState(0);
 
   const nextButtonClick = () => {
     bookRef.current.pageFlip().flipNext();
-    setPageIndex((prev) => prev + 1);
+    setPageIndex(currentPage + 1);
   };
 
   const prevButtonClick = () => {
     bookRef.current.pageFlip().flipPrev();
-    setPageIndex((prev) => prev - 1);
+    setPageIndex(currentPage - 1);
   };
 
   return (
@@ -31,6 +34,12 @@ const Book: FC = () => {
       {/* 
 // @ts-ignore */}
       <HTMLFlipBook
+        onInit={() => {
+          setPageIndex(bookRef?.current?.pageFlip()?.getCurrentPageIndex());
+        }}
+        onChangeState={() => {
+          setPageIndex(bookRef?.current?.pageFlip()?.getCurrentPageIndex());
+        }}
         className={cl.book}
         width={465}
         height={594}
