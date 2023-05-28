@@ -8,14 +8,14 @@
 }
 
 .--right {
-  background: url('src/assets/book-page-right.png') !important;
+  background: url('./assets/book-page-right.png') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   padding-left: 0 !important;
 }
 
 .--left {
-  background: url('src/assets/book-page-left.png') !important;
+  background: url('./assets/book-page-left.png') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -27,7 +27,7 @@
   }
   .--right,
   .--left {
-    background: url('src/assets/page-bg-412.jpg') !important;
+    background: url('./assets/page-bg-412.jpg') !important;
     background-size: cover !important;
   }
 }
