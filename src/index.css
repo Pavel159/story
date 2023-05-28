@@ -12,6 +12,7 @@ body {
   background: url('./assets/background.jpg') center no-repeat;
   background-size: cover;
   color: #070703;
+  overflow: hidden;
 }
 
 #root {
